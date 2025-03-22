@@ -19,4 +19,4 @@ def test_pyramid_5(capsys):
 *********
 """
     # Assert equal
-    assert pyramid_output == expected_output, f"Not a pyramid"
+    assert pyramid_output == expected_output, f"Not the correct pyramid"
