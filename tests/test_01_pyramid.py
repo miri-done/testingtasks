@@ -1,9 +1,9 @@
 import sys
 import os
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
-from tasks import pyramid
+from tasks.task_01 import pyramid
 
 # Test directly
 def test_pyramid_5(capsys):
@@ -19,4 +19,4 @@ def test_pyramid_5(capsys):
 *********
 """
     # Assert equal
-    assert pyramid_output == expected_output
+    assert pyramid_output == expected_output, f"Not a pyramid"
