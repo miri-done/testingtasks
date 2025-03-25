@@ -13,7 +13,7 @@ from tasks.task_02 import MyObservatoryTest
 def appium_service(): # make sure appium is running for the test
     appiumserv = AppiumService()
     appiumserv.start()
-    print(Appium should be running...)
+    print("Appium should be running.")
     yield appiumserv
     appiumserv.stop()
 
